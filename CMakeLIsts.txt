@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+set(CMAKE_CXX_STANDARD 17)
+
+project(PROCESS_SIM VERSION 1.0)
+set(PROCESS_SIM 1.0)
+
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+
+
+
+add_executable(PROCESS_SIM src/main.cpp src/data_reader.cpp  src/process.cpp src/FCFS.cpp src/MLFQ.cpp src/RoundRobin.cpp)
+
+
+
+
+target_include_directories(PROCESS_SIM
+  PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+
